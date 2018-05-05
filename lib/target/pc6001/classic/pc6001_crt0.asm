@@ -54,6 +54,10 @@ IF (startup=4)
 	ENDIF
 ENDIF
 
+IF (startup=5)
+	defc    CRT_ORG_CODE  = $8037	 ; PC6001 MK2 SR/PC-6601 SR/Mr. PC
+ENDIF
+
 IF      !CRT_ORG_CODE
 	defc    CRT_ORG_CODE  = $c437  ; PC6001 - 16K
 ENDIF
